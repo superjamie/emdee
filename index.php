@@ -10,7 +10,11 @@
 
 require_once 'Parsedown.php';
 $Parsedown = new Parsedown();
-$source = file_get_contents("./" . $_GET["id"] . ".md", FILE_USE_INCLUDE_PATH);
+if (isset($_GET["q"])) {
+    $source = file_get_contents("./" . $_GET["q"] . ".md", FILE_USE_INCLUDE_PATH);
+} else {
+    $source = file_get_contents("./index.md", FILE_USE_INCLUDE_PATH);
+}
 echo $Parsedown->text($source);
 
 ?>

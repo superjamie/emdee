@@ -36,6 +36,8 @@ Make sure the webserver has access to read all the files.
 
 Visit `/md/myfilename` to see rendered HTML.
 
+You may optionally create a file `index.md` to display if no `filename` parameter is passed.
+
 ## License
 
 GNU Affero GPL v3
