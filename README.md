@@ -38,6 +38,16 @@ Visit `/md/myfilename` to see rendered HTML.
 
 You may optionally create a file `index.md` to display if no `filename` parameter is passed.
 
+Page titles are generated using the first line of the document, expected to be a Markdown heading, eg:
+
+~~~
+file.md
+
+# My Great File
+~~~
+
+Browser title becomes "My Great File"
+
 ## License
 
 GNU Affero GPL v3
