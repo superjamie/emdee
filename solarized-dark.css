@@ -164,6 +164,7 @@ html {
 pre,
 code {
   font-family: 'Inconsolata', sans-serif;
+  line-height: 120%;
 }
 h1,
 h2,
@@ -182,7 +183,7 @@ html {
 body {
   background-color: #002b36;
   margin: 0 auto;
-  max-width: 23cm;
+  max-width: 1024px;
   border: 1pt solid #586e75;
   padding: 1em;
 }
