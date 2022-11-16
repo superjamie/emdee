@@ -28,6 +28,7 @@ Put Markdown documents in the same place, like so:
 ~~~
 index.php
 Parsedown.php
+solarized-dark.css
 solarized-light.css
 myfilename.md
 ~~~
