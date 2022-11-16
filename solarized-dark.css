@@ -160,11 +160,30 @@ table {
 }
 html {
   font-family: 'PT Sans', sans-serif;
+  background-color: #073642; /* base02 */
+  /* color: #839496; /*base0 */
+  color: #93a1a1; /*base1 */
+  margin: 1em;
 }
+/* common to fenced and inline code blocks */
 pre,
 code {
-  font-family: 'Inconsolata', sans-serif;
+  font-family: 'Inconsolata', monospace, sans-serif;
   line-height: 120%;
+  background-color: #03313c ; /* base02 and base03 halfway */
+  color: #93a1a1; /*base1 */
+}
+/* fenced code blocks only */
+pre {
+  border: 1pt solid #586e75; /* base01 */
+  padding: 1em;
+  box-shadow: 3pt 3pt 8pt #073642; /* base02 */
+}
+/* inline code blocks only */
+:not(pre) > code {
+  /* top right bottom left */
+  padding: 2px 4px 2px 4px;
+  background-color: #073642; /* base02, was base02 */
 }
 h1,
 h2,
@@ -175,50 +194,32 @@ h6 {
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 700;
 }
-html {
-  background-color: #073642;
-  color: #839496;
-  margin: 1em;
-}
 body {
-  background-color: #002b36;
+  background-color: #002b36; /* base03 */
   margin: 0 auto;
   max-width: 1024px;
-  border: 1pt solid #586e75;
+  border: 1pt solid #586e75; /* base01 */
   padding: 1em;
 }
-code {
-  background-color: #073642;
-  padding: 2px;
-}
 a {
-  color: #b58900;
+  color: #b58900; /* yellow */
 }
 a:visited {
-  color: #cb4b16;
+  /* color: #cb4b16; */ /* orange */
+  color: #b58900; /* yellow */
 }
 a:hover {
-  color: #cb4b16;
+  color: #cb4b16; /* orange */
 }
 h1 {
-  color: #d33682;
+  color: #d33682; /* magenta */
 }
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #859900;
-}
-pre {
-  background-color: #002b36;
-  color: #839496;
-  border: 1pt solid #586e75;
-  padding: 1em;
-  box-shadow: 5pt 5pt 8pt #073642;
-}
-pre code {
-  background-color: #002b36;
+  color: #859900; /* green */
 }
 h1 {
   font-size: 2.8em;
@@ -239,8 +240,8 @@ h6 {
   font-size: 1.15em;
 }
 .tag {
-  background-color: #073642;
-  color: #d33682;
+  background-color: #073642; /* base02 */
+  color: #d33682; /* magenta */
   padding: 0 0.2em;
 }
 .todo,

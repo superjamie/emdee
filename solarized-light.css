@@ -170,7 +170,6 @@ code {
   font-family: 'Inconsolata', monospace, sans-serif;
   line-height: 120%;
   background-color: #f6efdc ; /* base2 and base3 halfway */
-  /* color: #586e75; */ /* base01 */
   color: #657b83; /* base00 */
 }
 /* fenced code blocks only */
