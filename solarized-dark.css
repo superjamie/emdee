@@ -107,6 +107,11 @@ legend {
   border: 0;
   padding: 0;
 }
+button {
+ background-color: #002B36;
+ border: 1px solid #93a1a1;
+ border-radius: 4px;
+}
 button,
 input,
 select,
